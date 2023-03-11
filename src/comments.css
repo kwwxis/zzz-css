@@ -1,0 +1,185 @@
+
+/********************************************************************************
+* Comments
+*********************************************************************************/
+
+.comment {
+    background: white;
+    margin: 0;
+    position: relative;
+}
+
+.comment .entry {
+    position: static;
+}
+
+.comment .buttons {
+    margin-bottom: 4px;
+}
+
+/* comment expand button */
+.comment .expand,
+.comment.collapsed .expand,
+.comment.collapsed .tagline a.expand,
+.res.res-nightmode .comment .expand,
+.res.res-nightmode .comment.collapsed .expand,
+.res.res-nightmode .comment.collapsed .tagline a.expand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 3px 0 2px 0;
+    text-align: center;
+    color: hsla(230,15%,35%,1);
+    transition: all 200ms;
+}
+.comment .expand:hover,
+.comment.collapsed .expand:hover,
+.comment.collapsed .tagline a.expand:hover,
+.res.res-nightmode .comment .expand:hover,
+.res.res-nightmode .comment.collapsed .expand:hover,
+.res.res-nightmode .comment.collapsed .tagline a.expand:hover {
+    background: #dcfe00;
+    color: #000;
+    text-decoration: none;
+}
+
+.commentarea>.sitetable>.comment>.entry>.tagline>.expand {
+    top: 2px;
+}
+
+/* top level comment borders */
+.commentarea > .sitetable > .comment,
+.res.res-commentBoxes.res-commentHoverBorder .content .commentarea > .sitetable > .comment {
+    border: 1px solid;
+    border-left-color: #dfe0e4 !important;
+    border-right-color: #dfe0e4 !important;
+    border-top-color: #e5e6e9 !important;
+    border-bottom-color: #d0d1d5 !important;
+}
+
+/* spacing between sibling comments */
+.comment + .clearleft + .comment,
+.comment + .clearleft + .clearleft + .comment {
+    margin-top: 5px;
+}
+
+/* remove child left-border */
+.comment .child, .comment .showreplies, .comment.spam > .child {
+    border: 0;
+    background: transparent;
+    margin-top: 0;
+    margin-left: 8px;
+}
+
+/* override RES commentboxes*/
+.comment,
+.res.res-commentBoxes .comment,
+.res.res-commentBoxes .commentarea > .sitetable > .comment,
+.res.res-commentBoxes #bottom-comments > .sitetable > .comment {
+    padding: 10px 10px 0px 18px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.res.res-commentBoxes.res-continuity .comment div.child {
+    border-left: 0 !important;
+}
+.res.res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 0 !important;
+}
+.res.res-commentBoxes.res-commentHoverBorder .content .comment:hover {
+    outline: 1px rgb(153, 170, 238) solid !important;
+}
+
+/* comment side stripes
+--------------------------------------------------------------------------------*/
+.commentarea > .sitetable > .comment:before,
+#bottom-comments > .sitetable > .comment:before,
+.comment-permalink-page.comments-page .commentarea > .infobar:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: hsl(195, 24%, 88%);
+    opacity: 0.8;
+}
+
+/* stickied-comment left stripe */
+.commentarea > .sitetable > .comment.stickied:before,
+#bottom-comments > .sitetable > .comment.stickied:before {
+    background: #71E096;
+}
+
+/* spam-comment left stripe */
+.commentarea > .sitetable > .comment.spam:before,
+#bottom-comments > .sitetable > .comment.spam:before {
+    background: #FF8B94;
+}
+
+/* single comment thread left stripe */
+.comment-permalink-page .commentarea > .sitetable > .comment:before,
+.comment-permalink-page #bottom-comments > .sitetable > .comment:before,
+.comment-permalink-page.comments-page .commentarea>.infobar:before {
+    background: #FFDC89;
+}
+
+/* permalink comment infobar
+--------------------------------------------------------------------------------*/
+.comment-permalink-page.comments-page .commentarea > .infobar {
+    margin: 0 0px -1px 0px;
+    border: 0;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: Calibri,Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    font-size: 14px;
+    position: relative;
+    background: #ffc;
+    border: 1px solid #e3e3e3;
+}
+
+/* comments - alternating bg color
+--------------------------------------------------------------------------------*/
+.commentarea .comment .comment,
+.commentarea .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+    background-color: #f4f7f8 !important;
+}
+
+.commentarea .comment,
+.commentarea .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+{
+    background-color: #fff !important;
+}
+
+.commentarea .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam
+{
+    background-color: #52292c !important;
+}
+
+.commentarea .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam,
+.commentarea .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam .comment.spam
+{
+    background-color: #4b2629 !important;
+}

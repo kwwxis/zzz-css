@@ -1,0 +1,743 @@
+
+/********************************************************************************
+* Sidebar
+*********************************************************************************/
+
+.side .spacer {margin: 0;}
+
+.side #ad_main_top, .side .ad-container, .side [id^=ad] {
+    border: 4px solid #eaf0f2;
+    border-left: 0;
+    border-right: 0;
+    padding: 5px 0;
+    margin: 13px 0 13px 0;
+}
+
+.side .premium-banner-outer {
+    display: none !important;
+}
+
+.titlebox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-top: 4px;
+}
+
+.titlebox > * {
+    -webkit-order: 7;
+    order: 7;
+}
+
+.titlebox > .subButtons, .titlebox > .fancy-toggle-button.subscribe-button.toggle {
+    -webkit-order: 1;
+    order: 1;
+}
+.titlebox > .users-online {
+    -webkit-order: 2;
+    order: 2;
+}
+.titlebox > .sr_style_toggle, .titlebox > .res-sr-style-toggle {
+    -webkit-order: 3;
+    order: 3;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.titlebox > .leavecontributor-button , .titlebox > .leavemoderator {
+    -webkit-order: 4;
+    order: 4;
+}
+
+.titlebox > h1 {
+    display: block;
+    position: absolute;
+    top: 296px;
+    right: 40px;
+    width: 320px;
+    z-index: 99;
+    height: 120px;
+}
+
+.titlebox>h1>a {
+    background: url(%%logo%%);
+    display: block;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 230px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 3px;
+}
+
+.side .bottom, .sidebox.create .spacer {
+    display: none;
+}
+
+/* search
+--------------------------------------------------------------------------------*/
+.side #search {
+    position: absolute;
+    top: 243px;
+    z-index: 500;
+}
+
+#search input[type=text] {
+    border: 1px solid #ccd;
+    border-radius: 3px;
+}
+
+.side #search input[type=text] {
+    border-color: transparent;
+    background: transparent;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.side #search input[type=text]:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.side #search input[type=text]::placeholder {
+    color: #fff;
+}
+
+.side #search input[type=text]:not(:focus) {
+    color: #fff;
+}
+
+#search input[type=text]:hover:focus,
+#search input[type=text]:focus,
+#search input[type=text]:active {
+    background: white;
+    outline: 0;
+    box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14), 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+#search input[type=submit] {
+    background-image: none;
+}
+
+#searchexpando {
+    background: white;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.35);
+    color: #4c4c4c;
+    position: relative;
+    margin-top: 15px !important;
+    height: 120px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    overflow: visible !important;
+}
+#searchexpando:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    -webkit-transform: rotate(45deg) translate(5px,5px);
+    transform: rotate(45deg) translate(5px,5px);
+    box-shadow: -1px -1px 1px -1px rgba(0,0,0,.4);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 100%;
+    margin-bottom: -2px;
+}
+
+/* sidebar login form
+--------------------------------------------------------------------------------*/
+.login-form-side, .login-form-side .submit button {
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+}
+
+.login-form-side {
+    margin-top: 20px;
+    background-color: #EFF7FF;
+    border: 0;
+    font-size: 11px;
+    padding: 2px;
+    position: relative;
+}
+
+.login-form-side:before {
+    content: 'Login';
+    display: block;
+    margin: 6px 3px 0 5px;
+    padding-bottom: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid rgba(0,0,0,0.17);
+}
+
+.login-form-side .submit button {
+    display: block;
+    border: 0;
+    background: rgba(0,0,0,0.07);
+    color: #777;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    transition: all 200ms;
+}
+.login-form-side .submit button:hover {
+    background: #3daaf5;
+    color: white;
+}
+
+.login-form-side input[type=text], .login-form-side input[type=password] {
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.login-form-side #remember-me {
+    float: none;
+    margin-top: 0;
+    padding: 2px 5px;
+    background: rgba(0,0,0,0.03);
+    max-width: 223px;
+}
+
+.login-form-side {
+    background: #333;
+    margin: 0 0 20px;
+    color: #fff;
+    border: 1px solid #222;
+}
+
+.login-form-side:before {
+    color: #fff;
+}
+
+.login-form-side .submit button {
+  background-color: #dcfe00;
+  color: #000;
+}
+.login-form-side .submit button:hover {
+  background-color: #fbfe00;
+  color: #000;
+}
+
+.login-form-side input[type=text],
+.login-form-side input[type=password] {
+    background: #444;
+    color: #ccc;
+}
+
+.login-form-side input[type=text]::placeholder,
+.login-form-side input[type=password]::placeholder {
+    color: #999;
+}
+
+/* linkinfo
+--------------------------------------------------------------------------------*/
+.linkinfo {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+}
+
+html body .side .linkinfo .date,
+html.res.res-nightmode body .side .linkinfo .date {
+    text-align: center;
+    color: #aaa !important;
+}
+
+.linkinfo .date:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin: 10px auto 5px;
+    background: #666 !important;
+}
+
+.linkinfo .score, .linkinfo .totalvotes, .linkinfo .views {
+    display: block;
+    width: 175px;
+    margin: 0 auto;
+}
+.linkinfo .views {
+    margin-top: 8px;
+    border-top: 1px solid #666;
+    padding-top: 5px;
+}
+.linkinfo .score {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.linkinfo .score .word, .linkinfo .views .unit {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.linkinfo .shortlink {
+    font-size: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.linkinfo .shortlink input {
+    border: 1px solid #dfe0e4;
+    border: 0;
+    padding: 5px 8px;
+    font-size: 11px;
+    box-sizing: border-box;
+    background: #333 !important;
+    color: #ccc !important;
+}
+
+/* submit buttons
+--------------------------------------------------------------------------------*/
+.morelink .nub {
+    display: none;
+}
+
+
+body .side .submit .morelink, body .side .submit .morelink a {
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  color: #fff !important;
+  position: relative;
+  margin-bottom: 10px;
+  width: 260px;
+}
+
+body .side .submit .morelink a {
+  font-size: 16px;
+  font-family: Calibri,Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+  letter-spacing: .5px;
+  padding: 0;
+  position: relative;
+  height: 40px;
+  text-align: center;
+  background: #000;
+  margin: 0 23px 0 20px;
+  z-index: 0;
+  overflow: visible;
+}
+body .side .submit .morelink a:before {
+  content: '';
+  background: url(%%tabmenu-item%%) no-repeat;
+  background-size: 106px;
+  background-position: 20px 0;
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 100%;
+}
+body .side .submit .morelink a:after {
+  content: '';
+  background: url(%%tabmenu-item%%) no-repeat;
+  background-size: 106px;
+  background-position: -85px 0;
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 100%;
+}
+
+body .side .submit .morelink:hover a:before,
+body .side .submit .morelink:hover a:after {
+  background-image: url(%%tabmenu-masked%%);
+}
+
+body .side .submit .morelink:hover a,
+body .side .submit .morelink.selected a  {
+  background-image: url(%%tabmenu-mask-middle%%);
+  background-repeat: repeat;
+  background-size: 62px;
+  background-position: 0 0px;
+}
+
+/* create subreddit button and message mod button
+--------------------------------------------------------------------------------*/
+.sidebox.create .morelink,
+.sidecontentbox .message-button .c-btn.c-btn-primary {
+    background-image: none !important;
+    border: 0;
+    background: hsla(177deg, 100%, 35%, 9%);
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: rgba(0,0,0,0.55);
+}
+
+.sidebox.create .morelink a {
+    color: inherit;
+}
+
+.sidebox.create .morelink:hover,
+.sidecontentbox .message-button .c-btn.c-btn-primary:hover {
+    color: rgba(0,0,0,0.55);
+    background: hsla(177deg, 100%, 35%, 15%);
+}
+
+.sidecontentbox .message-button .c-btn.c-btn-primary {
+    margin-top: 0;
+}
+
+/* sidecontentbox
+--------------------------------------------------------------------------------*/
+
+.sidecontentbox .content {
+    background: #f4f7f8;
+    border: 0;
+    padding: 10px;
+}
+
+.icon-menu a {
+    background: transparent;
+}
+
+.sidecontentbox .title {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.sidecontentbox a.helplink {
+    display: inline-block;
+    margin-top: 1px;
+}
+
+/* Recently Viewed Links
+--------------------------------------------------------------------------------*/
+.gadget .reddit-entry .linkflairlabel {
+    position: static;
+    padding: 0 4px;
+    line-height: 17px;
+    height: 17px;
+    border-radius: 0;
+    background: #ddd;
+    margin-top: 5px;
+}
+
+.gadget .reddit-link-title {display: block;}
+.gadget .reddit-entry br {display: none;}
+.gadget .linkflairlabel {float: left;}
+
+.gadget small {
+    margin-top: 6px;
+    display: inline-block;
+}
+.gadget small .score {
+    margin-left: 0;
+}
+
+.account-activity-box {
+    padding: 5px 0 7px;
+}
+.account-activity-box a {
+     color: rgba(0,0,0,0.6);
+}
+
+/* RES sr toggle
+--------------------------------------------------------------------------------*/
+
+form.toggle.res-sr-style-toggle {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.res .res-sr-style-toggle label, .sr_style_toggle label {
+    color: rgba(0,0,0,0.35);
+}
+
+.res .res-sr-style-toggle input[type=checkbox], .sr_style_toggle input[type=checkbox] {
+    display: none;
+}
+
+.res .res-sr-style-toggle label:before, .sr_style_toggle label:before {
+    content: '✓';
+    display: inline-block;
+    font-weight: bold;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+/* subscriber info
+--------------------------------------------------------------------------------*/
+
+.titlebox > .subscribers, .titlebox > .users-online {
+    display: block;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    font-size: 13px;
+}
+
+html body .titlebox > .subscribers {
+  font-size: 13px;
+  letter-spacing: .5px;
+  position: absolute;
+  font-weight: bold;
+  color: #dcfe00 !important;
+  top: 381px;
+  width: 310px;
+  text-align: center;
+  z-index: 100;
+}
+.titlebox > .users-online {
+    margin-bottom: 15px;
+    margin-top: 2px;
+    font-style: italic;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+}
+.users-online:before { display: none; }
+
+/* sub buttons
+--------------------------------------------------------------------------------*/
+
+.subButtons {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    padding: 8px 0 10px 0;
+    text-align: center;
+    padding-top: 0 !important;
+}
+
+/* RES buttons */
+
+.res .res-fancy-toggle-button,
+.fancy-toggle-button.subscribe-button.toggle a.option.active {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    color: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.06);
+    padding: 0 8px;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    min-width: 84px;
+    text-align: center;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
+    background-color: #c0392b !important;
+    color: #fff !important;
+}
+
+.RESshortcutside:hover, .RESDashboardToggle:hover {
+    background-color: #2ecc71 !important;
+    color: #fff !important;
+}
+
+.titlebox span.multi-count {
+    display: none;
+}
+
+/* misc */
+
+.titlebox form.flairtoggle, .titlebox form.flairtoggle + .tagline {
+    display: none;
+}
+
+.titlebox form.leavecontributor-button:before, .titlebox .leavemoderator:before {
+    display: none;
+}
+
+.leavecontributor-button .option.main,
+.leavemoderator {
+    font-size: 0;
+}
+
+.leavecontributor-button .option.main:before,
+.leavecontributor-button .option.main a,
+.side .titlebox .leavemoderator:before,
+.leavemoderator a {
+    font-size: 10px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    float: none;
+    margin-right: 4px;
+    background-image: none !important;
+    color: rgba(0,0,0,0.35);
+}
+
+.titlebox .leavemoderator:before {
+    content: 'you are a moderator here — ';
+    display: block;
+}
+
+.leavecontributor-button .option.main:before {
+    content: 'you are an approved submitter — '
+}
+
+.leavecontributor-button,
+.leavemoderator {
+    text-align: center;
+}
+
+/* subscribe button */
+.fancy-toggle-button.subscribe-button.toggle a.option.active.add {
+    background: #dcfe00 !important;
+    color: #000 !important;
+}
+
+/* No RES */
+html:not(.res) .titlebox .fancy-toggle-button.subscribe-button {
+    margin: 0 auto 5px;
+}
+
+html:not(.res) .titlebox .fancy-toggle-button.subscribe-button.toggle a.option.active {
+    padding: 0 50px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+}
+
+/* sidebar common styles
+--------------------------------------------------------------------------------*/
+.side .md h1, .side .md h2, .side .md h3 {
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #7a8589;
+}
+
+.side .md p {
+    color: #767676;
+}
+
+/* sidebar content
+--------------------------------------------------------------------------------*/
+.side .md > p {
+    margin: 0;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    display: block;
+    border: 0;
+    padding: 0 10px 5px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.side .md > p:first-child:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: rgba(0,0,0,0.15);
+    margin: 15px auto 15px;
+}
+
+.side .md > p > strong {
+    color: #333;
+}
+.side .md > p:first-child > strong {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+.side .md > hr + p > strong {
+  font-size: 17px;
+    color: #666;
+}
+
+/* sidebar lists
+--------------------------------------------------------------------------------*/
+.side .md > ol {
+    counter-reset: siderules;
+    list-style: none;
+    padding: 0;
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+}
+
+.side .md > ol > li {
+    background: hsla(177deg, 100%, 35%, 9%);
+    border-bottom: 1px solid hsla(177deg, 100%, 35%, 25%);
+    padding: 5px 10px 5px  40px;
+    position: relative;
+    font-size: 13px;
+}
+
+.side .md > ol > li:before {
+    counter-increment: siderules;
+    content: counter(siderules);
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #f0555a;
+    color: white;
+}
+
+.side .md > ol > li > p, .side .md > ul > li > p {
+    line-height: 20px;
+}
+
+.side .md > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side .md > ul > li {
+    background: hsla(177deg, 100%, 35%, 9%);
+    border-bottom: 1px solid hsla(177deg, 100%, 35%, 25%);
+    padding: 6px 10px 6px 15px;
+    position: relative;
+    font-size: 11px;
+    line-height: 20px;
+    color: #565656;
+}
+.side .md > ul > li > a,
+.side .md > ol > li > a{
+  color: #dcfe00;
+  font-weight: bold;
+}

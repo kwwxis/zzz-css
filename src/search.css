@@ -1,0 +1,211 @@
+/* Search area wrapper
+--------------------------------------------------------------------------------*/
+
+.combined-search-page #previoussearch,
+.combined-search-page .search-result-group,
+.combined-search-page .searchfacets {
+    background: white;
+    padding: 0;
+    margin: 0;
+    max-width: 850px;
+}
+
+.combined-search-page #previoussearch {
+    border: 1px solid #dfe0e4;
+    border-top: 0;
+    margin-bottom: 10px;
+}
+
+.combined-search-page .content[role="main"] > .search-result-listing > .search-result-group,
+.combined-search-page .searchfacets {
+    border: 1px solid #dfe0e4;
+    border-top: 6px solid hsla(195,22%,91%,1);
+}
+
+.content >.listing.search-result-listing {
+    margin-bottom: 10px;
+}
+
+.combined-search-page.res .NERPageMarker,
+.combined-search-page.res #progressIndicator {
+    max-width: 850px;
+}
+
+/* Search area
+--------------------------------------------------------------------------------*/
+.combined-search-page .searchpane {
+    margin: 0;
+    padding: 0;
+}
+
+.combined-search-page .searchpane > h4 {
+    display: none;
+}
+
+/* Search input area
+--------------------------------------------------------------------------------*/
+.combined-search-page #search {
+    position: relative !important;
+    padding-right: 0;
+    margin: 0;
+    background: hsla(195,22%,97%,1);
+    padding: 10px;
+    max-width: none;
+}
+
+.combined-search-page #search input[type=text] {
+    background: #fff;
+    color: rgba(0,0,0,0.8) !important;
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+    font-size: 23px;
+    line-height: 32px;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    margin-bottom: 5px;
+    border: 1px solid #dfe0e4 !important;
+}
+
+/* Search icon
+--------------------------------------------------------------------------------*/
+.combined-search-page #search .c-btn-primary.c-btn {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    height: 42px;
+    border-radius: 0;
+    background: #f7f7f7;
+}
+
+.combined-search-page .search-icon {
+    background-image: none;
+    position: relative;
+    top: 2px;
+}
+.combined-search-page .search-icon:before,
+.combined-search-page .search-icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+.combined-search-page .search-icon:before {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.combined-search-page .search-icon:after {
+    width: 2px;
+    height: 8px;
+    background: #333;
+    -webkit-transform: rotateZ(-47deg);
+    -moz-transform: rotateZ(-47deg);
+    transform: rotateZ(-47deg);
+    bottom: 2px;
+    right: 4px;
+}
+
+/* Search area options
+--------------------------------------------------------------------------------*/
+.combined-search-page #previoussearch p,
+.combined-search-page #moresearchinfo,
+.combined-search-page #search > label {
+    margin-left: 10px;
+}
+
+/* RES search tabs
+--------------------------------------------------------------------------------*/
+.res ul.res-search-tabs {
+    margin: 0;
+    background: #fafafa;
+    border-top: 1px solid hsla(228,8%,92%,1);
+}
+
+.res ul.res-search-tabs li {
+    background: 0;
+}
+
+/* Search results header
+--------------------------------------------------------------------------------*/
+.combined-search-page .search-result-group-header {
+    margin: 0 10px 0 15px;
+    border: 0;
+    height: 34px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    font-family: Calibri,Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+}
+
+.combined-search-page .search-header-label {
+    flex-grow: 1;
+}
+
+/* Search results contents
+--------------------------------------------------------------------------------*/
+.combined-search-page .search-result-group,
+.combined-search-page .searchfacets {
+    background: hsla(195,22%,97%,1);
+}
+
+.combined-search-page .search-result-group {
+    padding-bottom: 10px;
+}
+
+.combined-search-page .search-result-group .contents,
+.combined-search-page .search-result-group footer .nav-buttons {
+    padding: 10px 20px;
+    margin: 0 10px 10px 10px;
+    border-radius: 3px;
+    background: white;
+}
+
+.combined-search-page #previoussearch .search-result-group footer .nav-buttons {
+    border-bottom: 0;
+}
+
+.combined-search-page .search-result-group .dropdown.lightdrop .selected {
+    text-decoration: none;
+}
+
+.combined-search-page .search-result-group .search-result {
+    border-bottom: 1px solid hsla(228,8%,95%,1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.search-result-icon-score {
+    display: none;
+}
+
+.res .combined-search-page #previoussearch .res-search-pane .search-result-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.combined-search-page #previoussearch .res-search-pane .search-result-group footer .nav-buttons {
+    border-top: 5px solid white;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.search-result-group footer .info {
+    margin: -30px 10px 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Search facets
+--------------------------------------------------------------------------------*/
+.combined-search-page .searchfacets {
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+}

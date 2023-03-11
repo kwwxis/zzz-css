@@ -1,0 +1,64 @@
+
+/********************************************************************************
+* Footer
+*********************************************************************************/
+
+/* font */
+.footer, .footer .flat-vert.title, .bottommenu {
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+}
+
+/* borders */
+.footer, .footer .col {
+    border: 0;
+    border-radius: 0;
+}
+
+/* footer parent */
+.footer-parent {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* bottom menu
+--------------------------------------------------------------------------------*/
+.bottommenu, .bottommenu a,
+.bottommenu a.updated {
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+}
+
+/* footer
+--------------------------------------------------------------------------------*/
+
+.footer {
+    max-width: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: url(%%bg-dark%%);
+}
+
+.footer .col:not(:last-child) {
+    margin-right: 80px;
+}
+
+.footer .col {
+    flex: initial;
+    flex: inherit;
+}
+
+.footer .col .title {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.footer .col li:not(.title) a {
+    color: #dcfe00;
+    font-size: 13px;
+    line-height: 18px;
+}

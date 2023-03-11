@@ -1,0 +1,71 @@
+.wiki-page .wiki-page-content {
+    margin: 0;
+}
+
+.wiki-page .markdownEditor-wrapper {
+    margin-top: 40px;
+}
+
+.wiki-page .wiki-page-content .wikirevisionlisting .generic-table {
+    margin: 0;
+}
+
+.wiki-page .wiki-page-content {
+    background: white;
+    padding: 10px;
+}
+
+/* toc */
+.wiki-page .wiki-page-content .wiki>.toc>ul {
+    background: #f3f6f7;
+    border: 0;
+    outline: 10px solid white;
+}
+
+/* revision info */
+.wiki-page-content > hr {
+    display: none;
+}
+.wiki-page-content > em:last-of-type {
+    display: block;
+    background: #f5f5f5;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* wiki title */
+.wiki-page .wikititle {
+    margin: 0;
+    display: block;
+    background: white;
+    padding: 5px 10px;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: hsla(196,24%,70%,1);
+}
+
+/* page actions */
+.wiki-page .pageactions {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background: white;
+    border-top: 3px solid hsl(196, 24%, 91%);
+}
+
+.wiki-page .pageactions .wikiaction {
+    color: rgba(0,0,0,0.35);
+    margin: 0;
+    border-radius: 0;
+    line-height: 20px;
+}
+.wiki-page .pageactions .wikiaction:hover {
+    background: rgba(0,0,0,0.03);
+}
+.wiki-page .pageactions .wikiaction-current {
+    background: transparent;
+    color: hsla(210,75%,55%,0.8);
+}

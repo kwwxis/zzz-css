@@ -1,0 +1,591 @@
+
+
+/********************************************************************************
+* HEADER
+*********************************************************************************/
+
+#header {
+    background: transparent;
+    margin: 0 -40px;
+    padding: 20px 40px 0 40px;
+    border-bottom: 0;
+}
+
+/* sr-header-area
+--------------------------------------------------------------------------------*/
+
+#sr-header-area, #sr-header-area a, #sr-header-area div[id^=RESShortcuts] {
+    background-color: #fff;
+    color: #555;
+    border: 0;
+}
+#sr-header-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 24px;
+    line-height: 24px;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.5);
+}
+#sr-header-area .dropdown.srdrop .selected {
+    color: rgba(255,255,255,0.3)!important;
+}
+
+/* header bottom left
+--------------------------------------------------------------------------------*/
+#header-bottom-left {
+    min-height: 260px;
+    height: 260px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+#header-bottom-left > * {
+    position: relative;
+    z-index: 1;
+}
+
+#header-bottom-left:after {
+  background: #000 url(%%banner%%);
+  background-size: cover;
+  background-position: center -29px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  content: '';
+  z-index: -1;
+  box-shadow: inset 0 0px 20px rgb(255 255 255 / 50%);
+}
+
+/* pagename
+--------------------------------------------------------------------------------*/
+.pagename {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute !important;
+    width: 350px;
+    height: 150px;
+    top: 0;
+    right: 330px;
+    bottom: 30px;
+    left: 0;
+    margin: auto;
+}
+
+.pagename a {
+    display: block;
+    position: relative;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    background: url(%%logo%%) no-repeat center / 440px;
+    transition: all 100ms linear;
+    opacity: 0.9;
+}
+.pagename a:hover {
+    opacity: 1;
+}
+
+#header-img-a, a#header-img.default-header {
+  background: url(%%snoo%%) no-repeat center 4px / 60%;
+  margin: 0;
+  width: 50px;
+  height: 36px;
+  margin-right: -4px;
+  margin-bottom: 7px;
+}
+
+#header-img-a img { display: none }
+
+#header-img-a:before, a#header-img.default-header:before {
+    background: #FF5700 url(%%snoo%%) no-repeat center 4px / 60% !important;
+}
+
+.pagename a {
+    position: relative;
+}
+
+/********************************************************************************
+* Header Bottom Right
+*********************************************************************************/
+
+/* header bottom right
+--------------------------------------------------------------------------------*/
+#header-bottom-right {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    z-index: 5000;
+    padding: 0;
+    background: #fff;
+}
+
+#RESShortcutsViewport {
+    margin-right: 400px;
+}
+
+#RESShortcutsEditContainer {
+    margin-right: 400px;
+    top: 3px;
+}
+
+#header-bottom-right, #header-bottom-right .user, #header-bottom-right a,
+#header-bottom-right .separator, .res #userbarToggle {
+    background-color: transparent;
+    color: #353535;
+    border: 0;
+}
+
+.beta-hint {
+    top: 0;
+}
+.beta-hint a {
+    margin-top: 0;
+    margin-left: -30px;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background-size: 50%;
+    background-position: center;
+}
+
+#header-bottom-right .beta-hint a:hover {
+    background-color: rgba(0,0,0,0.06);
+}
+
+#beta-help.hover-bubble {
+    margin-top: 10px;
+}
+
+/* header-bottom-right
+-------------------------------------------------------------------------------- */
+#header-bottom-right {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding: 0 4px 0 0;
+    height: 24px;
+    min-height: 24px;
+    line-height: 24px;
+    top: 0 !important;
+    bottom: auto !important;
+    right: 0 !important;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding-left: 30px;
+    min-width: 25px;
+    background: #fff;
+}
+.res #userbarToggle {
+    background: transparent;
+    border: 0;
+    line-height: 24px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+#header-bottom-right .separator {
+    display: none !important;
+}
+
+#header-bottom-right.res-userbar-toggle > .user {
+    margin-left: 0;
+}
+
+/* RES account switcher icon
+--------------------------------------------------------------------------------*/
+
+.res #RESAccountSwitcherIcon:after {
+    content: '';
+    display: block;
+    background: url(%%spritesheet%%);
+    /*background-position: -8px -56px; -- white icon version */
+    background-position: -367px -56px;
+    width: 25px;
+    height: 23px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.res #RESAccountSwitcherIcon {
+    width: 24px;
+    height: 24px;
+    background-image: none !important;
+    margin-left: 0;
+}
+.res #RESAccountSwitcherIcon:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+/* mail icon
+--------------------------------------------------------------------------------*/
+
+#message:after, #message.nohavemail:after, #message.havemail:after,
+#inbox:after, #inbox.nohavemail:after, #inbox.havemail:after,
+#mail:after, #mail.nohavemail:after, #mail.havemail:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(%%spritesheet%%);
+    /* background-position: -8px -31px; -- white icon version */
+    background-position: -367px -31px;
+    width: 25px;
+    height: 14px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#message.havemail:after,
+#mail.havemail:after {
+    background-position: -8px -31px;
+}
+
+#inbox {
+    margin-left: 1px !important;
+}
+#inbox:after {
+    height: 24px !important;
+}
+#inbox.nohavemail:after {
+    /* background-position: -8px -201px; -- white icon version */
+    background-position: -367px -201px;
+}
+#inbox.havemail:after {
+    background-position: -8px -226px;
+    /* background-position: -367px -226px; -- black icon version */
+}
+
+#message, #message.nohavemail, #message.havemail,
+#inbox, #inbox.nohavemail, #inbox.havemail,
+#mail, #mail.nohavemail, #mail.havemail {
+    background-image: none !important;
+    position: relative;
+    height: 24px;
+    min-width: 24px;
+    top: 0;
+    padding-left: 5px;
+    margin-left: 5px;
+    font-size: 0 !important;
+}
+#message.havemail, .res.res-nightmode #message.havemail,
+#inbox.havemail, .res.res-nightmode #inbox.havemail,
+#mail.havemail, .res.res-nightmode #mail.havemail {
+    background: #FF7500;
+}
+#message:not(.havemail):hover,
+#inbox:not(.havemail):hover,
+#mail:not(.havemail):hover {
+    background: rgba(0,0,0,0.06);
+}
+
+.message-count#chat-count {
+    height: 17px;
+    line-height: 17px;
+    margin: 0 4px 0 -2px;
+    border-radius: 3px;
+}
+
+#header-bottom-right #chat {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.message-count, .inbox-count {
+    border-radius: 0;
+    margin-left: 0;
+    padding: 0px 3px;
+    padding-right: 5px;
+    background-color: #FF7500 !important;
+    font-weight: bold;
+    color: white !important;
+}
+.inbox-count {
+    margin-right: 5px;
+}
+
+/* Mod mail + New Modmail icon
+--------------------------------------------------------------------------------*/
+
+#modmail, #modmail.havemail, #modmail.nohavemail,
+#new_modmail, #new_modmail.havemail, #new_modmail.nohavemail {
+    font-size: 0 !important;
+    background-image: none !important;
+    height: 24px;
+    width: 24px;
+    top: 0;
+    margin-bottom: 0;
+}
+#modmail.havemail, #new_modmail.havemail,
+.res.res-nightmode #modmail.havemail, .res.res-nightmode #new_modmail.havemail {
+    background: #FF7500;
+}
+#modmail:after, #new_modmail:after {
+    content: '';
+    display: block;
+    background: url(%%spritesheet%%);
+    /* background-position: -9px -116px; -- black icon version */
+    background-position: -367px -116px;
+    height: 23px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+#modmail.havemail:after {
+    background-position: -9px -116px;
+}
+
+#modmail:not(.havemail):hover, #new_modmail:not(.havemail):hover {
+    background: rgba(0,0,0,0.06);
+}
+
+#new_modmail:after {
+    background-position: -368px -176px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+}
+#new_modmail.havemail:after {
+    background-position: -10px -176px;
+}
+
+/* flat list
+--------------------------------------------------------------------------------*/
+
+#header-bottom-right > ul.flat-list {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+#header-bottom-right > ul.flat-list li {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+#header-bottom-right > ul.flat-list li > a {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+
+#header-bottom-right > ul.flat-list li > a:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+/* Preferences
+--------------------------------------------------------------------------------*/
+
+.pref-lang:after {
+    content: '';
+    display: block;
+    background: url(%%spritesheet%%);
+    /* background-position: -8px -145px; -- black icon version */
+    background-position: -367px -145px;
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.pref-lang {
+    font-size: 0 !important;
+}
+
+/* RES settings gear icon
+--------------------------------------------------------------------------------*/
+.res #RESSettingsButton, .res #openRESPrefs {
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+    margin-right: 5px;
+}
+
+.res .gearIcon:after {
+    text-shadow: none;
+    color: rgba(28,17,13,0.8);
+    /* color: white; */
+}
+
+.res #openRESPrefs:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+/* Account switcher dropdown
+--------------------------------------------------------------------------------*/
+
+.res #RESAccountSwitcherIconOverlay {
+    display: none !important;
+}
+
+.res #RESAccountSwitcherDropdown {
+    margin-top: -1px !important;
+    border: 0;
+    border-top: 2px solid #ff7500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background: white;
+}
+
+#RESAccountSwitcherDropdown.RESDropdownList li {
+    border: 0;
+    color: rgba(0,0,0,0.6);
+}
+#RESAccountSwitcherDropdown.RESDropdownList li:hover {
+    color: rgba(0,0,0,1);
+    background: transparent;
+}
+
+/* Mail and RES settings hover dropdowns
+--------------------------------------------------------------------------------*/
+.res .RESHover.RESHoverDropdownList.RESDropdownList {
+    margin: -3px 0 0 0 !important;
+    border: 0;
+    border-top: 2px solid #ff7500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background: white;
+}
+.res .RESHover.RESHoverDropdownList.RESDropdownList li,
+.RESDropdownList a, .RESDropdownList a:visited {
+    border: 0;
+    color: rgba(0,0,0,0.6);
+    background: transparent !important;
+}
+.res .RESHover.RESHoverDropdownList.RESDropdownList li:hover,
+.RESDropdownList a:hover, .RESDropdownList a:visited:hover {
+    color: rgba(0,0,0,1) !important;
+    background: transparent !important;
+}
+
+/********************************************************************************
+* Tabmenu
+*********************************************************************************/
+#header-bottom-left:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 46px;
+  background: #2f2f2f;
+  z-index: 0;
+}
+
+#header .tabmenu {
+  margin: 0;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+}
+
+#header .tabmenu li, #header .tabmenu li a {
+  margin: 0;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+#header .tabmenu li a {
+  font-size: 13px;
+  font-family: Calibri,Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+  letter-spacing: .5px;
+  padding: 0;
+  position: relative;
+  min-width: 50px;
+  height: 30px;
+  text-align: center;
+  background: #000;
+  margin: 0 16px 0 20px;
+  z-index: 0;
+}
+#header .tabmenu li a:before {
+  content: '';
+  background: url(%%tabmenu-item%%) no-repeat;
+  background-size: 80px;
+  background-position: 10px 0;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+#header .tabmenu li a:after {
+  content: '';
+  background: url(%%tabmenu-item%%) no-repeat;
+  background-size: 80px;
+  background-position: -64px 0;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+
+#header .tabmenu li:hover a:before,
+#header .tabmenu li:hover a:after,
+#header .tabmenu li.selected a:before,
+#header .tabmenu li.selected a:after {
+  background-image: url(%%tabmenu-masked%%);
+}
+
+#header .tabmenu li:hover a,
+#header .tabmenu li.selected a  {
+  background-image: url(%%tabmenu-mask-middle%%);
+  background-repeat: repeat;
+  background-size: 47px;
+  background-position: 0 0px;
+}
+
+
+#header .tabmenu li.res-tabmenu-button.res-toggle-filterline-visibility {
+  display: none !important;
+}

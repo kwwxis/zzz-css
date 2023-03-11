@@ -1,0 +1,291 @@
+
+/********************************************************************************
+* Comment Page
+*********************************************************************************/
+
+.commentarea,
+.commentarea > .sitetable {
+    margin-top: 10px;
+}
+
+.panestack-title,
+.commentarea .menuarea,
+.commentarea > .usertext,
+.gold-accent.comment-visits-box {
+    margin: 0;
+    border: 1px solid;
+    border-color: #dfe0e4;
+    border-top-color: #e5e6e9;
+    background: white;
+    padding: 10px;
+}
+
+.commentarea > .usertext {
+    border-top: 0;
+}
+
+.panestack-title, .comment-permalink-page .commentarea > .menuarea {
+    border-top-color: hsla(195,22%,91%,1);
+    border-top-width: 6px;
+    border-bottom: 0;
+}
+
+.commentarea .menuarea {
+    overflow: visible;
+    z-index: 5;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+    font-size: 14px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.menuarea > .spacer {margin-bottom: 0 !important;margin-right:23px;}
+.menuarea>.spacer+.spacer {margin-right: 2px;}
+
+.commentarea .menuarea form.toggle:first-child {
+    margin-left: 0;
+}
+
+.commentarea .menuarea .toggle a, .commentarea .menuarea .help-hoverable {
+    font-size: 12px;
+    display: inline-block;
+    padding: 4px;
+}
+.commentarea .menuarea .toggle a:hover {
+    background: rgba(0,0,0,0.06);
+}
+.commentarea > .menuarea:after {
+    content: '';
+    display: table;
+    clear: left;
+}
+
+.commentarea .menuarea .help-hoverable {
+    font-weight: bold;
+    color: gray;
+    font-size: 11px;
+    margin-left: -6px;
+}
+
+.menuarea>.spacer+.spacer {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.menuarea>.spacer+.spacer > .contest-mode.infobar.mellow {
+    margin: 10px 0 5px;
+}
+
+.commentarea .menuarea > .spacer:first-child {
+    position: relative;
+}
+
+.commentarea .menuarea > .spacer .dropdown.lightdrop ~ .drop-choices.inuse {
+    right: -4px;
+    min-width: 120px;
+}
+
+/* panestack title
+--------------------------------------------------------------------------------*/
+.panestack-title {
+    padding: 0 10px;
+    height: 46px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.panestack-title > .title {
+    margin: 0 20px 0 0;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: hsla(196,24%,70%,1);
+}
+
+/* and buttons */
+body.mod-toolbox a.tb-loadFlat.tb-general-button,
+.res .RESSubscriptionButton,
+#auto-load-more-comments,
+.panestack-title a.title-button,
+.res-commentNavToggle {
+  display: inline-block;
+  border: 0;
+  background: none;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  color: rgba(0,0,0,0.45);
+}
+
+body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
+.res .RESSubscriptionButton:hover,
+#auto-load-more-comments:hover,
+.panestack-title a.title-button:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+.commentarea .panestack-title a.title-button.gold {
+    border: 0;
+    border-radius: 0;
+    padding: 0 5px;
+    background: hsla(52, 100%, 90%, 1);
+    color: rgba(0,0,0,0.45);
+}
+
+.commentarea .panestack-title a.title-button.gold:hover {
+    background: hsla(52, 100%, 85%, 1);
+}
+
+#auto-load-more-comments {
+    margin: 0 0 0 8px;
+    font-size: 11px;
+}
+
+/* comment visits box
+--------------------------------------------------------------------------------*/
+
+.gold-accent.comment-visits-box {
+    background: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    max-width: none !important;
+    box-sizing: border-box;
+    border-top: 0;
+}
+
+.gold-accent.comment-visits-box .title {
+    background: #fbefb9;
+    padding: 7px 10px;
+    /* max-width: 650px; */
+    margin: 0;
+}
+
+select#comment-visits {
+    background: rgba(255,255,255,0.6);
+    border: 0;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.mod-toolbox .comment-visits-box a.tb-hide-old.tb-general-button {
+  background: transparent;
+  border: 0;
+}
+.res.res-nightmode.mod-toolbox .comment-visits-box a.tb-hide-old.tb-general-button {
+  color: #999;
+}
+
+/* RES comment "navigate by" thing
+--------------------------------------------------------------------------------*/
+
+.res #REScommentNavToggle {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-left: 0;
+    clear: none;
+}
+
+.res #REScommentNavToggle span:before {
+    content: 'navigate by';
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.55);
+}
+.res #REScommentNavToggle span:after {
+    content: '∨';
+    font-size: 7px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.res #REScommentNavToggle span,
+.res #REScommentNavToggle div {
+    height: 24px;
+    line-height: 24px;
+    min-width: 100px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    transition: all 200ms;
+}
+
+.res #REScommentNavToggle span {
+    font-size: 0;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 0;
+}
+.res #REScommentNavToggle:not(:hover) span {
+    border-color: transparent;
+}
+.res #REScommentNavToggle:hover span {
+    background: white;
+}
+.res #REScommentNavToggle:not(:hover) div {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.res #REScommentNavToggle div {
+    position: absolute;
+    background: white;
+    border-top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    z-index: 500;
+}
+.res #REScommentNavToggle div:not(:last-of-type) {
+    border-bottom: 0;
+}
+
+/* 24px is the height of the div, if you change the height make sure to change this too */
+#REScommentNavToggle div[index="1"]  { margin-top: 0px; /*calc(24px * 0);*/ }
+#REScommentNavToggle div[index="2"]  { margin-top: 24px; /*calc(24px * 1);*/ }
+#REScommentNavToggle div[index="3"]  { margin-top: 48px; /*calc(24px * 2);*/ }
+#REScommentNavToggle div[index="4"]  { margin-top: 72px; /*calc(24px * 3);*/ }
+#REScommentNavToggle div[index="5"]  { margin-top: 96px; /*calc(24px * 4);*/ }
+#REScommentNavToggle div[index="6"]  { margin-top: 120px; /*calc(24px * 5);*/ }
+#REScommentNavToggle div[index="7"]  { margin-top: 144px; /*calc(24px * 6);*/ }
+#REScommentNavToggle div[index="8"]  { margin-top: 168px; /*calc(24px * 7);*/ }
+#REScommentNavToggle div[index="9"]  { margin-top: 192px; /*calc(24px * 8);*/ }
+#REScommentNavToggle div[index="10"] { margin-top: 216px; /*calc(24px * 9);*/ }
+#REScommentNavToggle div[index="11"] { margin-top: 240px; /*calc(24px * 10);*/ }
+#REScommentNavToggle div[index="12"] { margin-top: 264px; /*calc(24px * 11);*/ }
+#REScommentNavToggle div[index="13"] { margin-top: 288px; /*calc(24px * 12);*/ }
+/* after 13 don't exist yet, but this should cover my ass for a bit in case
+   they decided to exist in the near future */
+#REScommentNavToggle div[index="14"] { margin-top: 312px; /*calc(24px * 13);*/ }
+#REScommentNavToggle div[index="15"] { margin-top: 336px; /*calc(24px * 14);*/ }
+#REScommentNavToggle div[index="16"] { margin-top: 360px; /*calc(24px * 15);*/ }
+#REScommentNavToggle div[index="17"] { margin-top: 384px; /*calc(24px * 16);*/ }
+#REScommentNavToggle div[index="18"] { margin-top: 408px; /*calc(24px * 17);*/ }
+#REScommentNavToggle div[index="19"] { margin-top: 432px; /*calc(24px * 18);*/ }
+#REScommentNavToggle div[index="20"] { margin-top: 456px; /*calc(24px * 19);*/ }
+
+.res .res-commentNavToggle-choices {
+    background: white;
+    line-height: 24px;
+    min-width: 100px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0;
+    font-family: "Segoe UI",Segoe,Roboto,"Helvetica Neue",Helvetica,"Calibri Light",Calibri,sans-serif;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.15), 0 -1px 0 rgba(0,0,0,0.07);
+}

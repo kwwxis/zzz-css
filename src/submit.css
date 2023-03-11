@@ -1,0 +1,140 @@
+.submit-page .content[role=main] {
+    position: relative;
+}
+
+.submit-page .submit.content {
+    max-width: 540px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.submit-page .content > h1 {
+    font-size: 0;
+    text-align: center;
+    margin: 45px 0 30px;
+    max-width: 540px;
+    width: 100%;
+}
+.submit-page .content > h1:before {
+    content: 'Submit a post';
+    font-size: 24px;
+    font-family: Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+}
+
+/* Input elements
+--------------------------------------------------------------------------------*/
+
+.submit-page .roundfield textarea,
+.submit-page .roundfield input[type=text],
+.submit-page .roundfield input[type=url],
+.submit-page .roundfield .usertext-edit,
+.submit-page.res .markdownEditor-wrapper {
+    width: 100%;
+    border-color: #c3c3c3;
+    font-family: Calibri,Segoe,"Segoe UI",Verdana,Arial,sans-serif;
+    min-width: 480px;
+}
+
+/* Hide things we don't want
+--------------------------------------------------------------------------------*/
+
+.submit-page .formtabs-content .infobar,
+.submit-page #suggested-reddits,
+.formtabs-content > .spacer:first-child {
+    display: none !important;
+}
+
+
+/* Form container
+--------------------------------------------------------------------------------*/
+
+.submit-page .formtabs-content {
+    border: 0;
+    position: relative;
+    margin-bottom: 20px; /* distance between main form and info notice box */
+    padding-top: 0;
+    max-width: 540px;
+}
+
+/* Tab menu
+--------------------------------------------------------------------------------*/
+
+.submit-page ul.tabmenu.formtab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 7px 10px;
+    background: hsla(195,22%,95%,1);
+}
+
+.submit-page ul.tabmenu.formtab li a {
+    color: rgba(0,0,0,0.55);
+    background: transparent;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.submit-page ul.tabmenu.formtab li a:hover {
+    color: rgba(0,0,0,0.8);
+}
+.submit-page ul.tabmenu.formtab li.selected a {
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+
+/* Round fields
+--------------------------------------------------------------------------------*/
+.submit-page .roundfield {
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0;
+    box-shadow: 0 0 2px rgb(0,0,0,0.4);
+}
+
+.submit-page .roundfield:not(.info-notice) {
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border: 0;
+}
+
+.submit-page .roundfield > .title {
+    font-family: Calibri, Segoe, "Segoe UI", Verdana, Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.4);
+}
+
+.submit-page #new-link-image-input > div {
+    color: rgba(0,0,0,0.65);
+}
+
+/* remove margin on spacer, put margin on roundfield instead */
+.submit-page #newlink-with-image-upload > .spacer {
+    margin: 0;
+}
+
+.submit-page #newlink-with-image-upload .roundfield {
+    margin-bottom: 15px;
+}
+
+/* Submit
+--------------------------------------------------------------------------------*/
+
+.submit-page .content.submit .info-notice {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0;
+    width: 520px;
+}
+
+.submit-page button[name="submit"] {
+    display: inline-block;
+    background: #dcfe00;
+    border: 0 !important;
+    border-radius: 5px;
+    color: #000;
+    line-height: 34px;
+    padding: 0 35px;
+}

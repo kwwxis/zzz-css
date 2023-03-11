@@ -1,0 +1,240 @@
+
+
+/********************************************************************************
+* Layout
+*********************************************************************************/
+.side {
+    margin: 0 1px 0 0;
+    padding: 0 10px;
+    padding-top: 150px;
+    margin-top: 5px;
+    border-top: 6px solid #dcfe00 !important;
+}
+
+.content[role=main] {
+    margin: 0 0 0 1px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 332px;
+    border-top: 6px solid #dcfe00 !important;
+    margin-top: 5px;
+}
+
+.linefield {
+  background: #2e2e2e;
+}
+
+.linefield .title {
+  color: #dcfe00;
+}
+
+/********************************************************************************
+* Listings
+*********************************************************************************/
+#noresults {
+    font-size: 0;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url(%%nothing-here%%) no-repeat center / contain;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.content[role=main] > .menuarea {
+    margin: 0;
+    background: white;
+    margin-bottom: 10px;
+    border: 0;
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.1); */
+    padding: 8px 10px;
+    border-left: 1px solid #dfe0e4;
+    border-right: 1px solid #dfe0e4;
+    border-bottom: 1px solid #d0d1d5;
+}
+
+.content[role=main] > .menuarea .spacer {
+    margin-bottom: 0;
+}
+
+.comments-page .content[role=main] > .reddit-infobar {
+    margin-top: 0;
+    border-top: 0;
+    border-left: 1px solid #dfe0e4;
+    border-right: 1px solid #dfe0e4;
+    border-bottom: 1px solid #d0d1d5;
+}
+
+/* RES Filterline
+--------------------------------------------------------------------------------*/
+.res-filterline {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0px 0px 1px rgba(0,0,0,0.08);
+}
+.res-filterline > * {
+    height: 24px;
+    line-height: 24px;
+}
+.res-filterline > .res-filterline-preamble {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: rgb(234, 240, 242);
+    margin-right: 5px;
+}
+
+/* Never Ending Reddit (RES)
+--------------------------------------------------------------------------------*/
+.res #progressIndicator, .res .NERPageMarker {
+    border-radius: 0;
+    border-top-color: #e5e6e9;
+    border-bottom-color: #d0d1d5;
+    border-left-color: #dfe0e4;
+    border-right-color: #dfe0e4;
+    background: white;
+}
+.res #progressIndicator {
+    margin-top: 10px;
+}
+
+.res div#progressIndicator {
+    border: 1.5px dashed hsla(0, 0%, 65%, 0.3);
+    border-radius: 3px;
+    background: transparent;
+    background: #f6f6f6;
+    margin: 20px;
+    padding: 10px 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto",arial,sans-serif;
+}
+
+#progressIndicator h2 {
+    color: #a5a5a5;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#progressIndicator p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+#progressIndicator a {
+    color: #858585;
+}
+#progressIndicator .gearIcon {
+    position: absolute;
+    opacity: 0.35;
+    transform: scale(0.8);
+    transform-origin: left top;
+}
+
+/* Navigation Buttons
+--------------------------------------------------------------------------------*/
+.listing-page .sitetable > .nav-buttons {
+    margin-top: 10px;
+    border: 1px solid #dfe0e4;
+    border-top-color: #e5e6e9;
+    border-bottom-color: #d0d1d5;
+    padding: 10px;
+    background: white;
+}
+
+.nextprev a, .nextprev a:hover,
+.res.res-nightmode .nextprev a, .res.res-nightmode .nextprev a:hover {
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    background-color: #dcfe00;
+    color: #000;
+    border: 0;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 10px;
+}
+.nextprev a:hover,
+.res.res-nightmode .nextprev a:hover {
+    background-color: #fbfe00;
+}
+.nextprev a:focus,
+.res.res-nightmode .nextprev a:focus {
+    background-color: #fbfe00;
+}
+
+/********************************************************************************
+* Gold Thing
+*********************************************************************************/
+.content > .reddit-infobar.gold-accent {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    background: #f1c40f;
+    border: 0;
+    color: white;
+    margin: 3px 0 5px;
+    border-radius: 0;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 28px;
+    position: relative;
+    overflow: visible;
+}
+
+.content > .reddit-infobar.gold-accent:before,
+.content > .reddit-infobar.gold-accent:after {
+    content: '★';
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-size: 35px;
+    transform: rotate(10deg);
+    text-shadow: none;
+    color: #f1c40f;
+}
+
+.content > .reddit-infobar.gold-accent:before {
+    color: hsla(48, 89%, 43%, 1);
+    color: white;
+    font-size: 48px;
+    margin-right: -6px;
+    margin-top: -0.5px;
+}
+
+.content > .reddit-infobar.gold-accent .md,
+.content > .reddit-infobar.gold-accent .md p {
+    color: inherit;
+    line-height: inherit;
+}
+
+/********************************************************************************
+* Link Ads
+*********************************************************************************/
+#siteTable_organic {
+    background-color: transparent !important;
+    overflow: visible;
+}
+
+.organic-listing .link {
+    padding-right: 0 !important;
+}
+
+.organic-listing .help {
+    right: 15px;
+    bottom: 5px;
+}
+.organic-listing .sponsored-tagline {
+    display: none; /* doesn't line up properly */
+}
+.organic-listing .help:before {
+    content: 'promoted post ';
+    color: #808080;
+    margin-right: 4px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+
+/********************************************************************************
+* Toolbars
+*********************************************************************************/
+.reddit-infobar, .reddit-infobar * {
+  color: #c0c0c0;
+}

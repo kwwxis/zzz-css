@@ -1,0 +1,90 @@
+.sheets { margin-right: 0; }
+
+/* body bg
+--------------------------------------------------------------------------------*/
+body {
+    position: relative;
+    overflow-x: hidden;
+    padding: 0 40px;
+    background: #000 url(%%bg-darker%%) repeat;
+}
+
+/* drop choices
+--------------------------------------------------------------------------------*/
+.dropdown.lightdrop .selected {
+    text-decoration: none;
+    padding: 4px 5px;
+    background-image: none !important;
+}
+
+.dropdown.lightdrop .selected:after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-bottom: 1.5px solid gray;
+    border-right: 1.5px solid gray;
+    -webkit-transform: rotateZ(45deg) translate(-2px,-2px);
+    transform: rotateZ(45deg) translate(-2px,-2px);
+    margin-left: 4px;
+}
+
+.dropdown.lightdrop .selected:hover {
+    background: rgba(0,0,0,0.06);
+    cursor: pointer;
+}
+
+.dropdown.lightdrop {
+    position: relative;
+    z-index: 502;
+}
+
+.dropdown.lightdrop ~ .drop-choices {
+    background: white;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    padding-top: 25px;
+    margin-top: -24px !important;
+    margin-left: -5px;
+    max-width: 0;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-width 200ms, max-height 200ms;
+}
+
+.dropdown.lightdrop ~ .drop-choices.inuse {
+    opacity: 1;
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.dropdown.lightdrop ~ .drop-choices a.choice {
+    color: rgb(68,68,68);
+    line-height: 26px;
+    padding: 0 10px;
+    transition: all 100ms;
+}
+
+.dropdown.lightdrop ~ .drop-choices a.choice:hover {
+    background: hsla(196,24%,95%,1);
+    color: rgb(28,28,28);
+}
+
+.drop-choices a.RES-dropdown-button {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.dropdown.lightdrop {
+  z-index: 502;
+}
+
+.dropdown.lightdrop ~ .drop-choices.inuse {
+  z-index: 501;
+}
