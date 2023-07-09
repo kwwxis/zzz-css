@@ -18,9 +18,14 @@
   z-index: 9999;
 }
 
+.side .flairselector {
+  position: absolute;
+}
+
 .flairselector h2 {
   background: #cdfe00 !important;
   color: #000 !important;
+  box-sizing: border-box;
 }
 
 .flairoptionpane ul li {

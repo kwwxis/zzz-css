@@ -457,7 +457,7 @@ body .side .submit .morelink.selected a  {
     padding: 5px 0 7px;
 }
 .account-activity-box a {
-     color: rgba(0,0,0,0.6);
+    opacity: 0.4;
 }
 
 /* RES sr toggle
@@ -683,7 +683,7 @@ html:not(.res) .titlebox .fancy-toggle-button.subscribe-button.toggle a.option.a
     color: #666;
 }
 
-/* sidebar lists
+/* sidebar lists - ol
 --------------------------------------------------------------------------------*/
 .side .md > ol {
     counter-reset: siderules;
@@ -718,10 +718,20 @@ html:not(.res) .titlebox .fancy-toggle-button.subscribe-button.toggle a.option.a
     color: white;
 }
 
-.side .md > ol > li > p, .side .md > ul > li > p {
-    line-height: 20px;
+.side .md > ol > li:before {
+  background: #dcfe00 !important;
+  color: #000 !important;
+  font-size: 16px;
 }
 
+.side .md > ol > li > p, .side .md > ul > li > p {
+  line-height: 18px;
+  font-size: 14px !important;
+  color: hsla(230,15%,79%,1)!important;
+}
+
+/* sidebar lists - ul
+--------------------------------------------------------------------------------*/
 .side .md > ul {
     list-style: none;
     padding: 0;
@@ -740,4 +750,18 @@ html:not(.res) .titlebox .fancy-toggle-button.subscribe-button.toggle a.option.a
 .side .md > ol > li > a{
   color: #dcfe00;
   font-weight: bold;
+}
+
+
+.side .md ul li, .side .md ol li {
+  background: hsl(0deg 0% 15%) !important;
+  border-bottom-color: hsl(0deg 0% 5%) !important;
+  color: hsla(230,15%,70%,1) !important;
+}
+
+.side .md > ol > li ul {
+  padding-left: 20px;
+}
+.side .md > ol > li ul > li {
+  padding-bottom: 5px;
 }

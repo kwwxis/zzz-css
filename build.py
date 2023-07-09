@@ -65,7 +65,7 @@ def run():
             #mini = compress(raw)
             mini = rcssmin.cssmin(raw)
             outfile.seek(0)
-            outfile.write(top(build_ver) + '\n' + mini)
+            outfile.write(top(build_ver) + '\n' + mini + '\n')
             outfile.truncate()
             
         # Increment build version in build.dat afterwards in case of failure

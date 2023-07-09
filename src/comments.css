@@ -140,8 +140,11 @@
     font-family: Calibri,Segoe,"Segoe UI",Verdana,Arial,sans-serif;
     font-size: 14px;
     position: relative;
-    background: #ffc;
-    border: 1px solid #e3e3e3;
+    background: #353500;
+    border: 1px solid #565603;
+}
+.usertext.border .usertext-body {
+  background: rgba(255,255,255,0.03);
 }
 
 /* comments - alternating bg color

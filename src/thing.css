@@ -14,6 +14,35 @@
   border: 1px solid #2f2f2f;
 }
 
+.thumbnail.nsfw,
+.thumbnail.spoiler,
+.thumbnail.self,
+.thumbnail.image,
+.thumbnail.default,
+.thumbnail.account {
+  background-image: url(%%default-thumbnails%%) !important;
+  background-size: auto !important;
+}
+
+.thumbnail.nsfw {
+  background-position: 0px -1155px !important;
+}
+.thumbnail.spoiler {
+  background-position: 0px -1211px !important;
+}
+.thumbnail.self {
+  background-position: 0px -1267px !important;
+}
+.thumbnail.image {
+  background-position: 0px -1043px !important;
+}
+.thumbnail.default {
+  background-position: 0px -1099px !important;
+}
+.thumbnail.account {
+  background-position: 0px -1211px !important;
+}
+
 .link, .link.last-clicked, .link.promoted.promotedlink {
     background: #fff;
     padding: 10px 5px;
@@ -86,8 +115,13 @@ ul.report-reasons {
   color: #000;
 }
 
+body.show-controversial .comment.controversial>.entry .score:after {
+  content: '†';
+  color: #ff5555;
+}
+
 /* active thing */
-.res .RES-keyNav-activeElement,
+.res .RES-keyNav-activeElement:not(.link),
 .res .RES-keyNav-activeElement .md-container,
 .res .entry.res-selected,
 .res .entry.res-selected .md-container,

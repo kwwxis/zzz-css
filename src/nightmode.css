@@ -101,18 +101,6 @@ html body .gearIcon:after {
     background: hsl(0deg 0% 21%) !important;
 }
 
-.side .md ul li, .side .md ol li {
-  background: hsl(0deg 0% 15%) !important;
-  border-bottom-color: hsl(0deg 0% 5%) !important;
-  color: hsla(230,15%,60%,1) !important;
-}
-
-.side .md>ol li:before {
-  background: #dcfe00 !important;
-  color: #000 !important;
-  font-size: 16px;
-}
-
 .side .md p {
     color: hsla(230,15%,70%,1) !important;
 }
@@ -328,7 +316,8 @@ a {
 }
 
 body, body .md, .res.res-nightmode body .md, .res.res-nightmode .content .sitetable .thing .md {
-  color: #c0c0c0;
+  color: #f0f2f5;
+  font-family: -apple-system,San Francisco Display,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .res-nightmode .new-comment .usertext-body {
@@ -384,10 +373,6 @@ body, body .md, .res.res-nightmode body .md, .res.res-nightmode .content .siteta
     background: #555 !important;
 }
 
-.RES-keyNav-activeElement,
-.RES-keyNav-activeElement .md-container {
-    background: transparent !important;
-}
 html body.entry.res-selected,
 html body.entry.res-selected .md-container {
     background-color: transparent !important;
