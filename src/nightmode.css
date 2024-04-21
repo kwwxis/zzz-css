@@ -319,6 +319,7 @@ body,
 body .md,
 .res.res-nightmode body .md,
 body .md blockquote,
+body .md del,
 .res.res-nightmode body .md blockquote,
 .res.res-nightmode .content .sitetable .thing .md {
   color: #f0f2f5;
@@ -327,6 +328,9 @@ body .md blockquote,
 
 .res-nightmode .new-comment .usertext-body {
   background-color: hsl(224deg 35% 15% / 35%);
+}
+.spoiler-stamp {
+  color: #f0f2f5;
 }
 
 /********************************************************************************
