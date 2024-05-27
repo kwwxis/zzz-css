@@ -25,6 +25,11 @@
     color: rgba(255,255,255,0.3) !important;
 }
 
+#sr-header-area a:hover,
+#sr-header-area a.RESShortcutsCurrentSub {
+  color: #dcfe00 !important;
+}
+
 #header-bottom-right > ul.flat-list li > a:hover,
 #openRESPrefs:hover,
 #modmail:not(.havemail):hover,
@@ -60,19 +65,19 @@ html body .gearIcon:after {
 }
 
 /* RES dropdown list */
-.RESHover.RESHoverDropdownList.RESDropdownList {
-    background-color: hsla(231,16%,25%,1);
+.res .RESHover.RESHoverDropdownList.RESDropdownList {
+    background-color: hsla(231,16%,25%,1) !important;
 }
 
-.RESHover.RESHoverDropdownList.RESDropdownList li,
-.RESDropdownList a,
-.RESDropdownList a:visited {
-    color: rgba(255,255,255,0.5);
+.res .RESHover.RESHoverDropdownList.RESDropdownList li,
+.res .RESDropdownList a,
+.res .RESDropdownList a:visited {
+    color: rgba(255,255,255,0.5) !important;
 }
 
-.RESHover.RESHoverDropdownList.RESDropdownList li:hover,
-.RESDropdownList a:hover,
-.RESDropdownList a:visited:hover {
+.res .RESHover.RESHoverDropdownList.RESDropdownList li:hover,
+.res .RESDropdownList a:hover,
+.res .RESDropdownList a:visited:hover {
     color: rgba(255,255,255,0.8) !important;
 }
 
@@ -212,9 +217,11 @@ html body .gearIcon:after {
 .link,
 .link.linkflair,
 .link.last-clicked,
+.link.promoted.promotedlink,
 .res.res-nightmode .link,
 .res.res-nightmode .link.linkflair,
-.res.res-nightmode .link.last-clicked {
+.res.res-nightmode .link.last-clicked,
+.res.res-nightmode .link.promoted.promotedlink {
   background: hsl(0deg 0% 18%);
   border-right: 0;
   border-bottom: 0;
@@ -450,6 +457,10 @@ body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
     background: rgba(255,255,255,0.04) !important;
 }
 
+.commentarea .panestack-title a.title-button.gold {
+  background: transparent;
+}
+
 /* comment nav toggle */
 #REScommentNavToggle span:before {
     color: rgba(255,255,255,0.4);
@@ -514,6 +525,9 @@ body.mod-toolbox a.tb-loadFlat.tb-general-button:hover,
 }
 .md blockquote {
     background: rgba(255,255,255,0.03);
+}
+.usertext.grayed .usertext-body {
+  background: rgba(255,255,255,0.07);
 }
 
 /* toolbox macro button */
