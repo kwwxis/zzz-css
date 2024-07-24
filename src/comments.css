@@ -153,7 +153,17 @@
 .commentarea .comment .comment .comment .comment,
 .commentarea .comment .comment .comment .comment .comment .comment,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
-.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html.res .res-commentBoxes .comment .comment,
+html.res .res-commentBoxes .comment .comment .comment .comment,
+html.res .res-commentBoxes .comment .comment .comment .comment .comment .comment
+html.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+html.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
 {
     background-color: #f4f7f8 !important;
 }
@@ -163,7 +173,19 @@
 .commentarea .comment .comment .comment .comment .comment,
 .commentarea .comment .comment .comment .comment .comment .comment .comment,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment,
+.res.res-nightmode .commentarea .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html.res .res-commentBoxes .comment,
+html.res .res-commentBoxes .comment .comment .comment,
+html.res .res-commentBoxes .comment .comment .comment .comment .comment,
+html.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment
+html.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+html.res .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
 {
     background-color: #fff !important;
 }
